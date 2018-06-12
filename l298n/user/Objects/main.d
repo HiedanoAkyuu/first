@@ -32,3 +32,4 @@
 .\objects\main.o: ..\system\sys\sys.h
 .\objects\main.o: ..\system\delay\delay.h
 .\objects\main.o: ..\hardware\led\led.h
+.\objects\main.o: ..\hardware\exit\exit.h

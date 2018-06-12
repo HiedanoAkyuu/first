@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10x_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\core;..\user;..\fwlib\inc;..\system\delay;..\system\sys;..\system\usart;..\hardware\led;..\hardware\l298n</IncludePath>
+              <IncludePath>..\core;..\user;..\fwlib\inc;..\system\delay;..\system\sys;..\system\usart;..\hardware\led;..\hardware\l298n;..\hardware\exit</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -566,6 +566,11 @@
               <FileName>led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\hardware\led\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>exit.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\exit\exit.c</FilePath>
             </File>
           </Files>
         </Group>
