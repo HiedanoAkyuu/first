@@ -1,4 +1,3 @@
-//流水灯不断右移，中断后反响
 #include<reg52.h>
 #include<string.h>
 #include<stdio.h>
@@ -25,24 +24,13 @@ void main()
 		led=b;
 		delay(500);
 		b=_crol_(b, 1);
-//		if (flag==1)
-//		{
-//			c=strlen(d);
-//			ES=0;//发数据前先关闭串口中断
-//			TI=1;
-//			printf("%d", c);
-//			while (!TI);//*******
-//			TI=0;
-//			ES=1;
-//			flag=0;
-//	  }
 		if (flag==1&&i<10)
 		{
 			flag=0;
 		}
 		for (i=0;i<10;i++)
 		{
-			if (d[i]=='2')
+			if (d[i]=='\n')
 			{	
 				c=strlen(d);
 				ES=0;
@@ -50,7 +38,6 @@ void main()
 				printf("%d", c);
 				while (!TI);//*********
 				TI=0;
-				ES=0;
 			}
 		}
 	}
