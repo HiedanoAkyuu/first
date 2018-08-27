@@ -1,0 +1,149 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: h Windows, HP Inc., LIC=PE72Z-JCBQ7-8FHIE-5YMGD-C1LVI-W7P5W
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.25.2.0
+Toolchain Path:  G:\keil\mdk\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.29.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+C:\Users\50205\Desktop\ov7670摄像头实验黑白二值化\USER\OV7670.uvprojx
+Project File Date:  08/25/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'G:\keil\mdk\ARM\ARMCC\Bin'
+Rebuild target 'OV7670'
+compiling main.c...
+main.c(35): warning:  #177-D: variable "v"  was declared but never referenced
+  	u8 v=140,h=105;
+main.c(35): warning:  #177-D: variable "h"  was declared but never referenced
+  	u8 v=140,h=105;
+main.c(94): error:  #169: expected a declaration
+  }	   
+main.c(120): warning:  #12-D: parsing restarts here after previous syntax error
+  	LCD_Init();			   		//初始化LCD  
+main.c(121): error:  #79: expected a type specifier
+  	TPAD_Init(6);				//触摸按键初始化 
+main.c(121): warning:  #77-D: this declaration has no storage class or type specifier
+  	TPAD_Init(6);				//触摸按键初始化 
+main.c(121): error:  #147: declaration is incompatible with "u8 TPAD_Init(u8)"  (declared at line 21 of "..\HARDWARE\TPAD\tpad.h")
+  	TPAD_Init(6);				//触摸按键初始化 
+main.c(122): error:  #77-D: this declaration has no storage class or type specifier
+   	POINT_COLOR=RED;			//设置字体为红色 
+main.c(122): error:  #147: declaration is incompatible with "u16 POINT_COLOR"  (declared at line 95 of "..\HARDWARE\LCD\lcd.h")
+   	POINT_COLOR=RED;			//设置字体为红色 
+main.c(123): error:  #79: expected a type specifier
+  	LCD_ShowString(30,50,200,16,16,"WarShip STM32");	
+main.c(123): error:  #79: expected a type specifier
+  	LCD_ShowString(30,50,200,16,16,"WarShip STM32");	
+main.c(123): error:  #79: expected a type specifier
+  	LCD_ShowString(30,50,200,16,16,"WarShip STM32");	
+main.c(123): error:  #79: expected a type specifier
+  	LCD_ShowString(30,50,200,16,16,"WarShip STM32");	
+main.c(123): error:  #79: expected a type specifier
+  	LCD_ShowString(30,50,200,16,16,"WarShip STM32");	
+main.c(123): error:  #79: expected a type specifier
+  	LCD_ShowString(30,50,200,16,16,"WarShip STM32");	
+main.c(123): warning:  #77-D: this declaration has no storage class or type specifier
+  	LCD_ShowString(30,50,200,16,16,"WarShip STM32");	
+main.c(123): error:  #147: declaration is incompatible with "void LCD_ShowString(u16, u16, u16, u16, u8, u8 *)"  (declared at line 172 of "..\HARDWARE\LCD\lcd.h")
+  	LCD_ShowString(30,50,200,16,16,"WarShip STM32");	
+main.c(124): error:  #79: expected a type specifier
+  	LCD_ShowString(30,70,200,16,16,"OV7670 TEST");	
+main.c(124): error:  #79: expected a type specifier
+  	LCD_ShowString(30,70,200,16,16,"OV7670 TEST");	
+main.c(124): error:  #79: expected a type specifier
+  	LCD_ShowString(30,70,200,16,16,"OV7670 TEST");	
+main.c(124): error:  #79: expected a type specifier
+  	LCD_ShowString(30,70,200,16,16,"OV7670 TEST");	
+main.c(124): error:  #79: expected a type specifier
+  	LCD_ShowString(30,70,200,16,16,"OV7670 TEST");	
+main.c(124): error:  #79: expected a type specifier
+  	LCD_ShowString(30,70,200,16,16,"OV7670 TEST");	
+main.c(124): warning:  #77-D: this declaration has no storage class or type specifier
+  	LCD_ShowString(30,70,200,16,16,"OV7670 TEST");	
+main.c(125): error:  #79: expected a type specifier
+  	LCD_ShowString(30,90,200,16,16,"ATOM@ALIENTEK");
+main.c(125): error:  #79: expected a type specifier
+  	LCD_ShowString(30,90,200,16,16,"ATOM@ALIENTEK");
+main.c(125): error:  #79: expected a type specifier
+  	LCD_ShowString(30,90,200,16,16,"ATOM@ALIENTEK");
+main.c(125): error:  #79: expected a type specifier
+  	LCD_ShowString(30,90,200,16,16,"ATOM@ALIENTEK");
+main.c(125): error:  #79: expected a type specifier
+  	LCD_ShowString(30,90,200,16,16,"ATOM@ALIENTEK");
+main.c(125): error:  #79: expected a type specifier
+  	LCD_ShowString(30,90,200,16,16,"ATOM@ALIENTEK");
+main.c(125): warning:  #77-D: this declaration has no storage class or type specifier
+  	LCD_ShowString(30,90,200,16,16,"ATOM@ALIENTEK");
+main.c(126): error:  #79: expected a type specifier
+  	LCD_ShowString(30,110,200,16,16,"2015/1/18"); 
+main.c(126): error:  #79: expected a type specifier
+  	LCD_ShowString(30,110,200,16,16,"2015/1/18"); 
+main.c(126): error:  #79: expected a type specifier
+  	LCD_ShowString(30,110,200,16,16,"2015/1/18"); 
+main.c(126): error:  #79: expected a type specifier
+  	LCD_ShowString(30,110,200,16,16,"2015/1/18"); 
+main.c(126): error:  #79: expected a type specifier
+  	LCD_ShowString(30,110,200,16,16,"2015/1/18"); 
+main.c(126): error:  #79: expected a type specifier
+  	LCD_ShowString(30,110,200,16,16,"2015/1/18"); 
+main.c: 7 warnings, 30 errors
+compiling system_stm32f10x.c...
+compiling stm32f10x_it.c...
+compiling led.c...
+compiling key.c...
+compiling tpad.c...
+compiling exti.c...
+compiling lcd.c...
+compiling timer.c...
+compiling ov7670.c...
+compiling delay.c...
+compiling sccb.c...
+compiling sys.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling usart.c...
+compiling misc.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_tim.c...
+compiling usmart_config.c...
+compiling usmart.c...
+compiling usmart_str.c...
+"..\OBJ\OV7670.axf" - 30 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_OV7670
+  G:\keil\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
