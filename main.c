@@ -7,6 +7,7 @@
 #include "exti.h"
 #include "stm32f10x.h"
 #include "l298n.h"
+#include "string.h"
 
 //传感器名字宏定义
 #define  OV7725 1
@@ -18,7 +19,8 @@
 
 extern u8 ov_sta;	//在exit.c里 面定义
 u8 gm_red, gm_green, gm_blue;
-vu16 color_flag[120][160]={0};
+
+vu16 color_flag[120][160]={0};//
 
 
 //更新LCD显示(OV7725)
@@ -27,11 +29,11 @@ void OV7725_camera_refresh(void)
 	u16 line=0, column=0;
 	u16 color_finish_flag=0;
  	u16 color;	 
-	//240行320列
+	u16 i;
 	
 	if(ov_sta)//有帧中断更新
 	{
-		LCD_Scan_Dir(L2R_U2D);		//从上到下,从左到右U2D_L2R   L2R_U2D
+		LCD_Scan_Dir(L2R_U2D);		//从上到下,从左到右U2D_L2R   从左到右，从上到下L2R_U2D
 		LCD_Set_Window((lcddev.width-OV7725_WINDOW_WIDTH)/2,(lcddev.height-OV7725_WINDOW_HEIGHT)/2,OV7725_WINDOW_WIDTH,OV7725_WINDOW_HEIGHT);//将显示区域设置到屏幕中央
 //****
 		LCD_WriteRAM_Prepare();     //开始写入GRAM	
@@ -48,7 +50,7 @@ void OV7725_camera_refresh(void)
 				OV7725_RCK_L;//读数据时钟
 				color=GPIOC->IDR&0XFF;	//读数据,,IDR寄存器有地址自增功能
 				OV7725_RCK_H; 
-				color<<=8;  //数据都是8位8位的传输
+				color<<=8; 
 				OV7725_RCK_L;
 				color|=GPIOC->IDR&0XFF;	//读数据
 				OV7725_RCK_H; 
@@ -67,12 +69,12 @@ void OV7725_camera_refresh(void)
 				} 
 				color_flag[line][column]=color; //写颜色数据到二维数组 
 				column++;
-				if (column==160)//320列
+				if (column==160)//160列
 				{
 					line++;
 					column=0;
 				}
-				if (line==120)//240行
+				if (line==120)//120行
 				{
 					line=0;
 					column=0;
@@ -81,15 +83,14 @@ void OV7725_camera_refresh(void)
 				}
 		}
 			
-		
-		while (1)
+		for (i=0;i<19200;i++)
 		{
 			if (color_finish_flag==1)//写数据
 			{
 				LCD->LCD_RAM=color_flag[line][column];
 				
 				line++;
-				if (line==120)//240列
+				if (line==120)
 				{
 					column++;
 					line=0;
@@ -99,10 +100,11 @@ void OV7725_camera_refresh(void)
 					line=0;
 					column=0;
 					color_finish_flag=0;
-					break;//至此完成所有数据的写入
+					//至此完成所有数据的写入
 				}
 			}
 		}
+		memset(color_flag,0,sizeof(color_flag));
  		ov_sta=0;					//清零帧中断标记，开始下一次采集
 		
 		}
