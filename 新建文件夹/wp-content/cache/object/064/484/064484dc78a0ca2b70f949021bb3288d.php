@@ -1,0 +1,9 @@
+���[<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:3:"651";s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2018-09-06 01:47:40";s:13:"post_date_gmt";s:19:"2018-09-05 17:47:40";s:12:"post_content";s:2024:"<img class="alignnone wp-image-652 size-medium" src="http://optobotlab.com/wp-content/uploads/2018/09/wang-199x300.jpg" alt="" width="199" height="300" />
+
+王世峰，男，1978年9月生，智能机电系统博士/仪器科学与技术博士，副教授，仪器科学与技术学科硕士生导师。
+2002年毕业于长春理工大学机械电子工程专业，获工学学士学位；2005年毕业于长春理工大学测试计量技术与仪器专业，获工学硕士学位；2008年毕业于长春理工大学仪器科学与技术专业，获工学博士学位；2013年毕业于University of Technology Sydney（悉尼科技大学，澳大利亚）Faculty of Engineering and Information Technology（工程与信息学院），获哲学博士学位。澳大利亚工程师协会认证一级职业工程师。现为长春理工大学光电工程学院探测与信息工程系教师，承担教学与科研工作。
+2002年工作以来，一直从事仪器科学与技术方面的教学和科研工作，研究兴趣为机器人环境感知、机器学习、机器视觉、光电检测技术及仪器。
+在教学方面：为本科生主讲《单片机原理及应用》、《传感与检测技术》课程；为硕士研究生主讲《专业英语》，《自主环境感知与控制技术及应用》。
+在科研方面：作为项目负责人结题省部级项目1项、企事业委托项目5项、校级项目2项；参与完成国家863及其它企事业委托项目10余项。2010-2103年间获澳大利亚政府国际研究奖学金（IRS）和悉尼科技大学校长奖学金（UTSP）全额资助；2010年吉林省优秀博士学位论文奖；2010年吉林省科学技术二等奖。截止2018年初，在国内外刊物上发表学术论文二十余篇，其中4篇SCI收录，13篇EI收录；获授权中国发明专利8项，实质审查阶段发明专利8项。
+
+参考链接：<a href="http://gd.cust.edu.cn/szdw/zzry/tcyxxgcx/18777.htm">http://gd.cust.edu.cn/szdw/zzry/tcyxxgcx/18777.htm</a>";s:10:"post_title";s:39:"实验室的领头人 - 王世峰简介";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:4:"open";s:11:"ping_status";s:4:"open";s:13:"post_password";s:0:"";s:9:"post_name";s:14:"leadingteacher";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2018-09-06 01:49:18";s:17:"post_modified_gmt";s:19:"2018-09-05 17:49:18";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";s:1:"0";s:4:"guid";s:28:"http://optobotlab.com/?p=651";s:10:"menu_order";s:1:"0";s:9:"post_type";s:4:"post";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";}}

@@ -1,0 +1,1 @@
+Lè©[<?php exit; ?>a:1:{s:7:"content";s:187:"a:10:{s:11:"networkwide";i:0;s:4:"auto";i:1;s:5:"lossy";i:0;s:8:"original";i:0;s:9:"keep_exif";i:0;s:6:"resize";i:1;s:6:"backup";i:0;s:10:"png_to_jpg";i:0;s:7:"nextgen";b:0;s:2:"s3";b:0;}";}
